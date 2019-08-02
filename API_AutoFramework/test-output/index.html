@@ -1,0 +1,1626 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>api自动化测试报告</title>
+
+	<style type='text/css'>
+		.node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>api自动化测试报告</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Aug 1, 2019 01:54:53 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.6</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>test</a></li>
+					<li><a href='#'>项目1</a></li>
+					<li><a href='#'>项目2</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='9.091%'><span class='strong'>1</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='90.909%'>10</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='9.091%'><span class='strong'>1</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='90.909%'>10</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>test : 项目1</span>
+						<span class='test-time'>Aug 1, 2019 01:54:53 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 1, 2019 01:54:53 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:54:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+150ms</span>
+</div>
+	<div class='test-desc'>Pass: 1 ; Fail: 6 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>test</span>
+				<span class='category label white-text'>项目1</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval=用户不存在, actual={"timestamp":1564638895559,"status":404,"error":"Not Found","message":"No m...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 1s+424ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895559,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:用户不存在
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval=用户存在, actual={"timestamp":1564638895595,"status":404,"error":"Not Found","message":"No me...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 1s+183ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895595,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:用户存在
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval=123, actual={"timestamp":1564638895611,"status":404,"error":"Not Found","message":"No mes...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 1s+155ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895611,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:123
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval=312, actual={"timestamp":1564638895629,"status":404,"error":"Not Found","message":"No mes...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 1s+145ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895629,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:312
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='6'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval={"data":[{"attr":"sort","id":22,"name":"排序"},{"attr":"bind","id":38,"name":"绑定"},{"attr":...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 1s+46ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 预期结果:{"data":[{"attr":"sort","id":22,"name":"排序"},{"attr":"bind","id":38,"name":"绑定"},{"attr":"recommend","id":13,"name":"推荐"},{"attr":"filtrate","id":20,"name":"筛选"},{"attr":"stop","id":7,"name":"停用"},{"attr":"addBank","id":24,"name":"放入文章库"},{"attr":"doctorAdd","id":28,"name":"医生新增"},{"attr":"online","id":11,"name":"上线"},{"attr":"delete","id":3,"name":"删除"},{"attr":"essence","id":14,"name":"精华"},{"attr":"view","id":0,"name":"查看"},{"attr":"add","id":1,"name":"新增"},{"attr":"export","id":4,"name":"导出"},{"attr":"use","id":15,"name":"采纳"},{"attr":"addArticle","id":34,"name":"补充文章"},{"attr":"offRecommend","id":18,"name":"取消推荐"},{"attr":"msgEdit","id":35,"name":"社区修改"},{"attr":"switch","id":23,"name":"开关"},{"attr":"addTag","id":37,"name":"加标签"},{"attr":"offEssence","id":19,"name":"取消精华"},{"attr":"offTop","id":17,"name":"取消置顶"},{"attr":"import","id":5,"name":"导入"},{"attr":"preview","id":21,"name":"预览"},{"attr":"barAdd","id":26,"name":"吧主新增"},{"attr":"doctorRemove","id":29,"name":"医生删除"},{"attr":"customerService","id":39,"name":"社区客服"},{"attr":"edit","id":2,"name":"编辑"},{"attr":"start","id":10,"name":"开启"},{"attr":"lableAdd","id":30,"name":"标签新增"},{"attr":"public","id":9,"name":"发布"},{"attr":"reset","id":6,"name":"重置"},{"attr":"offLine","id":16,"name":"下线"},{"attr":"productEdit","id":36,"name":"产品体验"},{"attr":"close","id":8,"name":"结束"},{"attr":"按钮标记","id":12,"name":"按钮名称"},{"attr":"lableEdit","id":31,"name":"标签修改"},{"attr":"trash","id":25,"name":"放入回收站"},{"attr":"lableRemove","id":32,"name":"标签删除"},{"attr":"barRemove","id":27,"name":"吧主删除"},{"attr":"removeArticle","id":33,"name":"移出专题"}],"message":"成功","status":200,"time":0}
+ not Contains 实际结果:{"timestamp":1564638895721,"status":404,"error":"Not Found","message":"No message available","path":"//api/operatin/btn"}
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase1.get(testCase1.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='7'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 0s+996ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 预期结果:{"message":"成功","status":200,"time":0}
+ not Contains 实际结果:
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase1.put(testCase1.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{result=true, expectval=, actual={"timestamp":1564638895646,"status":404,"error":"Not Found","messag...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='node-duration'>0h 0m 1s+127ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目1</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>test : 项目2</span>
+						<span class='test-time'>Aug 1, 2019 01:54:54 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 1, 2019 01:54:54 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:54:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+401ms</span>
+</div>
+	<div class='test-desc'>Pass: 0 ; Fail: 4 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>test</span>
+				<span class='category label white-text'>项目2</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='10'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval="message":"操作成功!","status":200, actual={"timestamp":1564638896416,"status":404,"error":"N...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:55 PM</span>
+						<span class='node-duration'>0h 0m 0s+398ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目2</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 实际结果:{"timestamp":1564638896416,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:"message":"操作成功!","status":200
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase2.post(testCase2.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='11'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval={"status":200,"message":"B端設置的健康科普为空","data":[],"total":0,"page":1,"size":10, actual={"st...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:55 PM</span>
+						<span class='node-duration'>0h 0m 0s+339ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目2</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 实际结果:{"status":500,"message":"Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+ not Contains 预期结果:{"status":200,"message":"B端設置的健康科普为空","data":[],"total":0,"page":1,"size":10
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase2.post(testCase2.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='12'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval={"data":{"userCount":50,"originCount":43,"doctorCount":11244,"comtyCount":195,"unAuditCom...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:55 PM</span>
+						<span class='node-duration'>0h 0m 0s+175ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目2</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 预期结果:{"data":{"userCount":50,"originCount":43,"doctorCount":11244,"comtyCount":195,"unAuditComtyCount":168},"message":"操作成功!","status":200,"time":0}
+ not Contains 实际结果:{"timestamp":1564638896592,"status":404,"error":"Not Found","message":"No message available","path":"//api/index/findIndexData"}
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase2.get(testCase2.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='13'>
+					<div class='collapsible-header'>
+						<div class='node-name'>{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</div>						
+						<span class='node-time'>Aug 1, 2019 01:54:55 PM</span>
+						<span class='node-duration'>0h 0m 0s+117ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>test</span>
+											<span class='category label white-text'>项目2</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:54:55 PM</td>
+													<td class='step-details'><pre>java.lang.Exception: 预期结果:{"message":"成功","status":200,"time":0}
+ not Contains 实际结果:
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase2.put(testCase2.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>test</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>12</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 12</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 1, 2019 01:54:53 PM</td>
+										<td class='linked' test-id='1'>项目1</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='2'>项目1.{expectval=用户不存在, actual={"timestamp":1564638895559,"status":404,"error":"Not Found","message":"No m...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='3'>项目1.{expectval=用户存在, actual={"timestamp":1564638895595,"status":404,"error":"Not Found","message":"No me...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='4'>项目1.{expectval=123, actual={"timestamp":1564638895611,"status":404,"error":"Not Found","message":"No mes...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='5'>项目1.{expectval=312, actual={"timestamp":1564638895629,"status":404,"error":"Not Found","message":"No mes...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='6'>项目1.{expectval={"data":[{"attr":"sort","id":22,"name":"排序"},{"attr":"bind","id":38,"name":"绑定"},{"attr":...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='7'>项目1.{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='8'>项目1.{result=true, expectval=, actual={"timestamp":1564638895646,"status":404,"error":"Not Found","messag...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='9'>项目2</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='10'>项目2.{expectval="message":"操作成功!","status":200, actual={"timestamp":1564638896416,"status":404,"error":"N...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='11'>项目2.{expectval={"status":200,"message":"B端設置的健康科普为空","data":[],"total":0,"page":1,"size":10, actual={"st...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='12'>项目2.{expectval={"data":{"userCount":50,"originCount":43,"doctorCount":11244,"comtyCount":195,"unAuditCom...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='13'>项目2.{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>项目1</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 7</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 1, 2019 01:54:53 PM</td>
+										<td class='linked' test-id='1'>项目1</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='2'>项目1.{expectval=用户不存在, actual={"timestamp":1564638895559,"status":404,"error":"Not Found","message":"No m...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='3'>项目1.{expectval=用户存在, actual={"timestamp":1564638895595,"status":404,"error":"Not Found","message":"No me...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='4'>项目1.{expectval=123, actual={"timestamp":1564638895611,"status":404,"error":"Not Found","message":"No mes...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='5'>项目1.{expectval=312, actual={"timestamp":1564638895629,"status":404,"error":"Not Found","message":"No mes...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='6'>项目1.{expectval={"data":[{"attr":"sort","id":22,"name":"排序"},{"attr":"bind","id":38,"name":"绑定"},{"attr":...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='7'>项目1.{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='8'>项目1.{result=true, expectval=, actual={"timestamp":1564638895646,"status":404,"error":"Not Found","messag...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>项目2</span>
+						<span class='category-status right'>
+							<span class='label fail'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 5</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 1, 2019 01:54:54 PM</td>
+										<td class='linked' test-id='9'>项目2</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='10'>项目2.{expectval="message":"操作成功!","status":200, actual={"timestamp":1564638896416,"status":404,"error":"N...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='11'>项目2.{expectval={"status":200,"message":"B端設置的健康科普为空","data":[],"total":0,"page":1,"size":10, actual={"st...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='12'>项目2.{expectval={"data":{"userCount":50,"originCount":43,"doctorCount":11244,"comtyCount":195,"unAuditCom...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 1, 2019 01:54:55 PM</td>
+										<td class='linked' test-id='13'>项目2.{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.Exception</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>10</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:54 PM</td>
+                                                        <td class='linked' test-id='2'>项目1.{expectval=用户不存在, actual={"timestamp":1564638895559,"status":404,"error":"Not Found","message":"No m...</td>
+                                                        <td><pre><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895559,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:用户不存在
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:54 PM</td>
+                                                        <td class='linked' test-id='3'>项目1.{expectval=用户存在, actual={"timestamp":1564638895595,"status":404,"error":"Not Found","message":"No me...</td>
+                                                        <td><pre><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895595,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:用户存在
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:54 PM</td>
+                                                        <td class='linked' test-id='4'>项目1.{expectval=123, actual={"timestamp":1564638895611,"status":404,"error":"Not Found","message":"No mes...</td>
+                                                        <td><pre><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895611,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:123
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:54 PM</td>
+                                                        <td class='linked' test-id='5'>项目1.{expectval=312, actual={"timestamp":1564638895629,"status":404,"error":"Not Found","message":"No mes...</td>
+                                                        <td><pre><pre>java.lang.Exception: 实际结果:{"timestamp":1564638895629,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:312
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase1.login(testCase1.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:54 PM</td>
+                                                        <td class='linked' test-id='6'>项目1.{expectval={"data":[{"attr":"sort","id":22,"name":"排序"},{"attr":"bind","id":38,"name":"绑定"},{"attr":...</td>
+                                                        <td><pre><pre>java.lang.Exception: 预期结果:{"data":[{"attr":"sort","id":22,"name":"排序"},{"attr":"bind","id":38,"name":"绑定"},{"attr":"recommend","id":13,"name":"推荐"},{"attr":"filtrate","id":20,"name":"筛选"},{"attr":"stop","id":7,"name":"停用"},{"attr":"addBank","id":24,"name":"放入文章库"},{"attr":"doctorAdd","id":28,"name":"医生新增"},{"attr":"online","id":11,"name":"上线"},{"attr":"delete","id":3,"name":"删除"},{"attr":"essence","id":14,"name":"精华"},{"attr":"view","id":0,"name":"查看"},{"attr":"add","id":1,"name":"新增"},{"attr":"export","id":4,"name":"导出"},{"attr":"use","id":15,"name":"采纳"},{"attr":"addArticle","id":34,"name":"补充文章"},{"attr":"offRecommend","id":18,"name":"取消推荐"},{"attr":"msgEdit","id":35,"name":"社区修改"},{"attr":"switch","id":23,"name":"开关"},{"attr":"addTag","id":37,"name":"加标签"},{"attr":"offEssence","id":19,"name":"取消精华"},{"attr":"offTop","id":17,"name":"取消置顶"},{"attr":"import","id":5,"name":"导入"},{"attr":"preview","id":21,"name":"预览"},{"attr":"barAdd","id":26,"name":"吧主新增"},{"attr":"doctorRemove","id":29,"name":"医生删除"},{"attr":"customerService","id":39,"name":"社区客服"},{"attr":"edit","id":2,"name":"编辑"},{"attr":"start","id":10,"name":"开启"},{"attr":"lableAdd","id":30,"name":"标签新增"},{"attr":"public","id":9,"name":"发布"},{"attr":"reset","id":6,"name":"重置"},{"attr":"offLine","id":16,"name":"下线"},{"attr":"productEdit","id":36,"name":"产品体验"},{"attr":"close","id":8,"name":"结束"},{"attr":"按钮标记","id":12,"name":"按钮名称"},{"attr":"lableEdit","id":31,"name":"标签修改"},{"attr":"trash","id":25,"name":"放入回收站"},{"attr":"lableRemove","id":32,"name":"标签删除"},{"attr":"barRemove","id":27,"name":"吧主删除"},{"attr":"removeArticle","id":33,"name":"移出专题"}],"message":"成功","status":200,"time":0}
+ not Contains 实际结果:{"timestamp":1564638895721,"status":404,"error":"Not Found","message":"No message available","path":"//api/operatin/btn"}
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase1.get(testCase1.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:54 PM</td>
+                                                        <td class='linked' test-id='7'>项目1.{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</td>
+                                                        <td><pre><pre>java.lang.Exception: 预期结果:{"message":"成功","status":200,"time":0}
+ not Contains 实际结果:
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase1.put(testCase1.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:55 PM</td>
+                                                        <td class='linked' test-id='10'>项目2.{expectval="message":"操作成功!","status":200, actual={"timestamp":1564638896416,"status":404,"error":"N...</td>
+                                                        <td><pre><pre>java.lang.Exception: 实际结果:{"timestamp":1564638896416,"status":404,"error":"Not Found","message":"No message available","path":"/api/account/login"}
+ not Contains 预期结果:"message":"操作成功!","status":200
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase2.post(testCase2.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:55 PM</td>
+                                                        <td class='linked' test-id='11'>项目2.{expectval={"status":200,"message":"B端設置的健康科普为空","data":[],"total":0,"page":1,"size":10, actual={"st...</td>
+                                                        <td><pre><pre>java.lang.Exception: 实际结果:{"status":500,"message":"Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+ not Contains 预期结果:{"status":200,"message":"B端設置的健康科普为空","data":[],"total":0,"page":1,"size":10
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:91)
+	at com.qa.base.AiwenAssert.isContains(AiwenAssert.java:81)
+	at com.qa.tests.testCase2.post(testCase2.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:55 PM</td>
+                                                        <td class='linked' test-id='12'>项目2.{expectval={"data":{"userCount":50,"originCount":43,"doctorCount":11244,"comtyCount":195,"unAuditCom...</td>
+                                                        <td><pre><pre>java.lang.Exception: 预期结果:{"data":{"userCount":50,"originCount":43,"doctorCount":11244,"comtyCount":195,"unAuditComtyCount":168},"message":"操作成功!","status":200,"time":0}
+ not Contains 实际结果:{"timestamp":1564638896592,"status":404,"error":"Not Found","message":"No message available","path":"//api/index/findIndexData"}
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase2.get(testCase2.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 1, 2019 01:54:55 PM</td>
+                                                        <td class='linked' test-id='13'>项目2.{expectval={"message":"成功","status":200,"time":0}, apiName=api/operatin/btn, dataJson={'id':'100','n...</td>
+                                                        <td><pre><pre>java.lang.Exception: 预期结果:{"message":"成功","status":200,"time":0}
+ not Contains 实际结果:
+	at com.qa.base.AiwenAssert.contains(AiwenAssert.java:66)
+	at com.qa.tests.testCase2.put(testCase2.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Aug 1, 2019 01:54:53 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Aug 1, 2019 01:54:54 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>1,150ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>test</td>
+							<td>1</td>
+							<td>12</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>项目1</td>
+							<td>1</td>
+							<td>7</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>项目2</td>
+							<td>0</td>
+							<td>5</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 1,
+				failParent: 10,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 10,
+				
+				passChild: 1,
+				failChild: 10,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 10,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>
