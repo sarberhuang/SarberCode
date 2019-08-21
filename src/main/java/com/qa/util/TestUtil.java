@@ -1,104 +1,64 @@
 package com.qa.util;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.ReadContext;
 
+
 import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.util.EntityUtils;
-import org.apache.poi.ss.usermodel.CellType;
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.HashMap;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class TestUtil {
-
-    //获取返回的token ,使用JsonPath获取json路径
-    public static HashMap<String,String> getToken(CloseableHttpResponse closeableHttpResponse,String jsonPath) throws Exception{
-        HashMap<String,String> responseToken = new HashMap<String, String>();
-        String responseString = EntityUtils.toString( closeableHttpResponse.getEntity(),"UTF-8");
-        ReadContext ctx = JsonPath.parse(responseString);
-        String Token = ctx.read(jsonPath); //"$.EFPV3AuthenticationResult.Token"
-        if(null == Token||"".equals(Token)){
-            new Exception("token不存在");
+    //出去内容里面的空格，换行，制表 符号
+    public static String replaceBlank(String str) {
+        String dest = "";
+        if (str!=null) {
+            Pattern p = Pattern.compile("\\s*|\t|\r|\n");
+            Matcher m = p.matcher(str);
+            dest = m.replaceAll("");
         }
-
-        responseToken.put("x-ba-token",Token);
-        return responseToken;
-    }
-
-
-
-    //遍历excel
-    public static Object[][] dtt(String filePath) throws IOException{
-
-        File file = new File(filePath);
-        FileInputStream fis = new FileInputStream(file);
-
-        XSSFWorkbook wb = new XSSFWorkbook(fis);
-        XSSFSheet sh = wb.getSheetAt(0);
-        int numberrow = sh.getPhysicalNumberOfRows();
-        int numbercell = sh.getRow(0).getLastCellNum();
-
-        Object[][] dttData = new Object[numberrow][numbercell];
-        for(int i=0;i<numberrow;i++){
-            if(null==sh.getRow(i)||"".equals(sh.getRow(i))){
-                continue;
-            }
-            for(int j=0;j<numbercell;j++) {
-                if(null==sh.getRow(i).getCell(j)||"".equals(sh.getRow(i).getCell(j))){
-                    continue;
-                }
-                XSSFCell cell = sh.getRow(i).getCell(j);
-                cell.setCellType(CellType.STRING);
-                dttData[i][j] = cell.getStringCellValue();
-            }
-        }
-
-        return dttData;
-    }
-
-    //遍历excel，sheet参数
-    public static Object[][] dtt(String filePath,int sheetId) throws IOException{
-
-        File file = new File(filePath);
-        FileInputStream fis = new FileInputStream(file);
-
-        XSSFWorkbook wb = new XSSFWorkbook(fis);
-        XSSFSheet sh = wb.getSheetAt(sheetId);
-        int numberrow = sh.getPhysicalNumberOfRows();
-        int numbercell = sh.getRow(0).getLastCellNum();
-
-        Object[][] dttData = new Object[numberrow][numbercell];
-        for(int i=0;i<numberrow;i++){
-            if(null==sh.getRow(i)||"".equals(sh.getRow(i))){
-                continue;
-            }
-            for(int j=0;j<numbercell;j++) {
-                if(null==sh.getRow(i).getCell(j)||"".equals(sh.getRow(i).getCell(j))){
-                    continue;
-                }
-                XSSFCell cell = sh.getRow(i).getCell(j);
-                cell.setCellType(CellType.STRING);
-                dttData[i][j] = cell.getStringCellValue();
-            }
-        }
-
-        return dttData;
+        return dest;
     }
 
     //获取状态码
-    public static int getStatusCode(CloseableHttpResponse closeableHttpResponse){
-        int StatusCode = closeableHttpResponse.getStatusLine().getStatusCode();
-        return StatusCode;
+    public static int getStatusCode(String response){
+        JSONObject obj= (JSONObject) JSONObject.parse(response);
+        obj.get("message").toString();
+        String state=obj.get("status").toString();
+        Pattern p = Pattern.compile("[^0-9]");
+        Matcher m = p.matcher(state);
+        int StatusCode =Integer.parseInt(m.replaceAll(""));
+      return StatusCode;
     }
+
+    //解析json
+    public static String getValueByJPath(JSONObject responseJson,String jpth){
+        Object obj=responseJson;
+        for(String s:jpth.split("/")){
+            if(!s.isEmpty()){
+                if(!(s.contains("[") || s.contains("]"))) {
+                    obj = ((JSONObject) obj).get(s);
+                }else if(s.contains("[") || s.contains("]")) {
+                    obj =((JSONArray)((JSONObject)obj).get(s.split("\\[")[0])).get(Integer.parseInt(s.split("\\[")[1].replaceAll("]", "")));
+                }
+            }
+        }
+        return obj.toString();
+
+    }
+
+//获取登陆token
+public static  String getToken(String resp,String jsonPath) throws  Exception{
+    ReadContext ctx = JsonPath.parse(resp);
+    String Token = ctx.read(jsonPath);
+      if(null == Token||"".equals(Token))
+      {            new Exception("token不存在");        }
+      return Token;
+
+}
 
 }

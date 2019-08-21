@@ -1,7 +1,7 @@
 package com.qa.base;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import org.junit.Test;
+
+import java.io.*;
 import java.util.Properties;
 
 public class TestBase {
@@ -18,5 +18,17 @@ public class TestBase {
         }catch (IOException i){
             i.printStackTrace();
         }
+    }
+
+    public  void writeData(String path,String key,String value) throws IOException{
+
+        prop = new Properties();
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/config/config.properties");
+        prop.load(fis);
+        fis.close();
+        OutputStream fos=new FileOutputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/config/config.properties");
+        prop.setProperty(key,value);
+        prop.store(fos,"Update '" + key + "' value");
+        fos.close();
     }
 }

@@ -3,26 +3,25 @@
 <suite name="test" verbose="1" preserve-order="true" parallel="false">
     <test name="项目1">
         <classes>
-            <class name="com.qa.tests.testCase1">
+            <class name="com.qa.tests.test.testCase2">
                 <methods>
-                    <include name="login"></include>
-                    <include name="getApi"></include>
-                    <include name="deleteApi"></include>
+                    <include name="post"></include>
+                    <include name="get"></include>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="项目2">
-        <classes>
-            <class name="com.qa.tests.testCase1">
-                <methods>
-                    <include name="login"></include>
-                    <include name="getApi"></include>
-                    <include name="deleteApi"></include>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--    <test name="项目2">-->
+<!--        <classes>-->
+<!--            <class name="com.qa.tests.testCase2">-->
+<!--                <methods>-->
+<!--                    <include name="post"></include>-->
+<!--                    <include name="get"></include>-->
+<!--                    <include name="put"></include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
     <listeners>
         <listener class-name="com.qa.report.ExtentTestNGReporterListener"></listener>
     </listeners>

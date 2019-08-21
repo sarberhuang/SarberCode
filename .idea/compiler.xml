@@ -9,8 +9,5 @@
         <module name="API_AutoFramework" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="API_AutoFramework" target="1.6" />
-    </bytecodeTargetLevel>
   </component>
 </project>
