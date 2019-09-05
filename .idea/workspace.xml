@@ -6,87 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="048cee4f-2434-47e7-9f4d-2abb0ac6b2e3" name="Default Changelist" comment="初版api自动化">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/API_AutoFramework_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/base/AiwenAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/base/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/data.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/testCase1data.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/testCase2data.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/testResult.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/video.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/wenwo-cloud-biz-manager.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/wenwo-cloud-doctor-consult.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/initExcelPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testdataJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/util/CreatData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/util/ExcelData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/util/ExcelUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/util/diffText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ext_jenkin_wu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_java5_16_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="048cee4f-2434-47e7-9f4d-2abb0ac6b2e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/wenwo-cloud-doctor-assist-tool.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/wenwo-cloud-doctor-content.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/initExcelPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonFalse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/HttpClientDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_AutoFramework.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/Parameters/postParameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/data/testCase1data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/data/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/data/testCase1data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/data/testCase1data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/tests/testCase1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/Parameters/postParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/base/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qa/base/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/qa/restclient/RestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qa/restclient/RestClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/tests/EFPStagingCN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/tests/EFPStagingSG.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/tests/testCase1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/qa/util/TestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/qa/util/TestUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,80 +40,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/initExcelPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="method#login#0;class#testdataJsonTrue#0" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonNull.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonFalse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="138" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="138" />
+            <state relative-caret-position="168">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
               <folding>
-                <element signature="method#setUp#0;class#testdataJsonNull#0" />
-                <element signature="e#1514#2149#1" />
-                <element signature="e#1664#1759#1" />
-                <element signature="e#1800#1907#1" />
-                <element signature="e#1944#2033#1" />
-                <element signature="e#2072#2139#1" />
-                <element signature="method#post#0;class#testdataJsonNull#0" />
-                <element signature="e#2661#2818#1" />
-                <element signature="method#get#0;class#testdataJsonNull#0" />
-                <element signature="e#3319#3476#1" />
-                <element signature="method#getConfigDatas#0;class#testdataJsonNull#0" />
-                <element signature="method#Numbers#0;class#testdataJsonNull#0" />
-                <element signature="method#Numbers2#0;class#testdataJsonNull#0" />
-                <element signature="method#putNumbers#0;class#testdataJsonNull#0" />
-                <element signature="method#login#0;class#testdataJsonNull#0" />
-                <element signature="e#4728#4855#1" />
-                <element signature="e#4861#4989#1" />
+                <element signature="method#getConfigDatas#0;class#testdataJsonTrue#0" />
+                <element signature="method#Numbers#0;class#testdataJsonTrue#0" />
+                <element signature="method#Numbers2#0;class#testdataJsonTrue#0" />
+                <element signature="method#putNumbers#0;class#testdataJsonTrue#0" />
+                <element signature="e#5590#5591#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="60" />
+            <state relative-caret-position="185">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8-sources.jar!/org/testng/internal/Invoker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="575" selection-start-line="575" selection-end-line="575" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
               <folding>
-                <element signature="e#1515#2150#1" />
-                <element signature="e#5321#5322#0" expanded="true" />
-                <element signature="e#5361#5362#0" expanded="true" />
+                <element signature="method#doPut#0;class#RestClient#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/initExcelPath.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1284">
-              <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+            <state relative-caret-position="374">
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="n#!!block;n#endTest#0;n#testCase1#0" />
               </folding>
             </state>
           </provider>
@@ -184,11 +118,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="84">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+              <folding>
+                <element signature="e#1740#1901#0" />
+                <element signature="e#1924#1999#0" />
+                <element signature="docComment;method#buildUrl#0;class#BodyClient#0" />
+                <element signature="method#buildUrl#0;class#BodyClient#0" />
+                <element signature="method#get#0;class#BodyClient#0" />
+                <element signature="method#getUnsafeOkHttpClient#0;class#BodyClient#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -228,12 +188,13 @@
       <find>repo</find>
       <find>charset</find>
       <find>exec</find>
-      <find>http</find>
       <find>org.apache.httpcomponents</find>
       <find>def</find>
       <find>getCo</find>
       <find>load</find>
       <find>Object</find>
+      <find>cookie</find>
+      <find>http</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -258,18 +219,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qa/Parameters/postParameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/QueryClient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/util/diffText.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/base/AiwenAssert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/util/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/config/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/testCase3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/util/ExcelData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/util/CreatData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/testCase2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/testCase1.java" />
@@ -278,24 +236,37 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testdataJson.java" />
         <option value="$PROJECT_DIR$/src/excelPath.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/excelPath.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonNull.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/initExcelPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/doctor-assist-toolTest/52007Test/testdataJsonTrue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonFalse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/test/LoginService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/HttpClientDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/test/HttpClientDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/initExcelPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="26" />
-    <option name="y" value="3" />
-    <option name="width" value="1136" />
-    <option name="height" value="1047" />
+    <option name="x" value="1014" />
+    <option name="y" value="15" />
+    <option name="width" value="1243" />
+    <option name="height" value="1003" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,7 +307,44 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API_AutoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API_AutoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="restclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API_AutoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API_AutoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Server52077Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -348,18 +356,32 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="severiceNameTest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API_AutoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API_AutoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API_AutoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/qa/data" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -377,9 +399,11 @@
       <recent name="com.qa.Parameters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\API_AutoFramework\src\main\java\com\qa\tests\severiceNameTest" />
       <recent name="E:\API_AutoFramework\src\main\java\com\qa\data" />
-      <recent name="E:\API_AutoFramework\src\main\java\com\qa\util" />
+      <recent name="E:\API_AutoFramework\src\main\java\com\qa\tests\Server52077Test" />
+      <recent name="E:\API_AutoFramework\src\main\java\com\qa\tests\doctor-assist-toolTest" />
+      <recent name="E:\API_AutoFramework\src\main\java\com\qa\tests\test" />
+      <recent name="E:\API_AutoFramework\src\main\java\com\qa\tests\severiceNameTest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -394,7 +418,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testdataJsonTrue">
+  <component name="RunManager" selected="TestNG.testdataJsonTrue.post (2)">
     <configuration name="testCase1.getAPITest" type="TestNG" nameIsGenerated="true">
       <module name="API_AutoFramework" />
       <extension name="coverage">
@@ -421,16 +445,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testCase2.get" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testdataJsonTrue.get" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API_AutoFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.tests.test.*" />
+          <option name="PATTERN" value="com.qa.tests.Server52077Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.tests.test.testCase2" />
+      <option name="PACKAGE_NAME" value="com.qa.tests.Server52077Test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.tests.Server52077Test.testdataJsonTrue" />
       <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -439,34 +463,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testdataJson" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testdataJsonTrue.login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API_AutoFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.tests.test.*" />
+          <option name="PATTERN" value="com.qa.tests.Server52077Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.tests.test.testdataJson" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testdataJsonFalse.post" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="API_AutoFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.tests.severiceNameTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.tests.severiceNameTest" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.tests.severiceNameTest.testdataJsonFalse" />
-      <option name="METHOD_NAME" value="post" />
+      <option name="PACKAGE_NAME" value="com.qa.tests.Server52077Test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.tests.Server52077Test.testdataJsonTrue" />
+      <option name="METHOD_NAME" value="login" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -474,7 +481,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testdataJsonTrue" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testdataJsonTrue.post (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="API_AutoFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.tests.Server52077Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.tests.Server52077Test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.tests.Server52077Test.testdataJsonTrue" />
+      <option name="METHOD_NAME" value="post" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="3" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testdataJsonTrue.post (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API_AutoFramework" />
       <extension name="coverage">
         <pattern>
@@ -484,23 +510,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.tests.severiceNameTest" />
       <option name="MAIN_CLASS_NAME" value="com.qa.tests.severiceNameTest.testdataJsonTrue" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="post" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testdataJson.post" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testdataJsonTrue.post" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API_AutoFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.tests.test.*" />
+          <option name="PATTERN" value="com.qa.tests.Server52077Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.tests.test.testdataJson" />
+      <option name="PACKAGE_NAME" value="com.qa.tests.Server52077Test" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.tests.Server52077Test.testdataJsonTrue" />
       <option name="METHOD_NAME" value="post" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -511,19 +538,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.testCase1.getAPITest" />
-      <item itemvalue="TestNG.testdataJson.post" />
-      <item itemvalue="TestNG.testCase2.get" />
-      <item itemvalue="TestNG.testdataJson" />
-      <item itemvalue="TestNG.testdataJsonFalse.post" />
-      <item itemvalue="TestNG.testdataJsonTrue" />
+      <item itemvalue="TestNG.testdataJsonTrue.post" />
+      <item itemvalue="TestNG.testdataJsonTrue.login" />
+      <item itemvalue="TestNG.testdataJsonTrue.get" />
+      <item itemvalue="TestNG.testdataJsonTrue.post (1)" />
+      <item itemvalue="TestNG.testdataJsonTrue.post (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testdataJsonTrue" />
-        <item itemvalue="TestNG.testdataJsonFalse.post" />
-        <item itemvalue="TestNG.testdataJson.post" />
-        <item itemvalue="TestNG.testdataJson" />
-        <item itemvalue="TestNG.testCase2.get" />
+        <item itemvalue="TestNG.testdataJsonTrue.post (2)" />
+        <item itemvalue="TestNG.testdataJsonTrue.post (1)" />
+        <item itemvalue="TestNG.testdataJsonTrue.post" />
+        <item itemvalue="TestNG.testdataJsonTrue.get" />
+        <item itemvalue="TestNG.testdataJsonTrue.login" />
       </list>
     </recent_temporary>
   </component>
@@ -538,44 +565,52 @@
       <option name="presentableId" value="Default" />
       <updated>1563357301311</updated>
     </task>
+    <task id="LOCAL-00001" summary="更新最新版">
+      <created>1566387574007</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566387574007</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 40m 23s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post - 2019.09.05 at 09h 24m 12s.xml">
+      <configuration name="testdataJsonTrue.post" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 49m 00s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post - 2019.09.05 at 09h 37m 20s.xml">
+      <configuration name="testdataJsonTrue.post" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 50m 47s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post - 2019.09.05 at 09h 42m 44s.xml">
+      <configuration name="testdataJsonTrue.post" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 55m 40s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post - 2019.09.05 at 09h 44m 09s.xml">
+      <configuration name="testdataJsonTrue.post" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 56m 26s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post_(1) - 2019.09.05 at 09h 45m 56s.xml">
+      <configuration name="testdataJsonTrue.post (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 56m 44s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post_(2) - 2019.09.05 at 09h 50m 15s.xml">
+      <configuration name="testdataJsonTrue.post (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 16h 58m 59s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post_(2) - 2019.09.05 at 09h 51m 49s.xml">
+      <configuration name="testdataJsonTrue.post (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 17h 04m 42s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post_(2) - 2019.09.05 at 09h 55m 15s.xml">
+      <configuration name="testdataJsonTrue.post (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonFalse_post - 2019.08.21 at 17h 05m 19s.xml">
-      <configuration name="testdataJsonFalse.post" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post_(2) - 2019.09.05 at 09h 55m 19s.xml">
+      <configuration name="testdataJsonTrue.post (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testdataJsonTrue - 2019.08.21 at 17h 20m 42s.xml">
-      <configuration name="testdataJsonTrue" configurationId="TestNG" />
+    <history-entry file="testdataJsonTrue_post_(2) - 2019.09.05 at 09h 59m 30s.xml">
+      <configuration name="testdataJsonTrue.post (2)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -584,15 +619,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57342005" weight="0.25813448" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70255864" weight="0.3264642" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.57342005" visible="true" weight="0.2559653" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70255864" weight="0.3394794" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.29744136" side_tool="true" weight="0.3264642" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49840087" weight="0.32968238" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48720682" weight="0.32104123" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48720682" weight="0.31995663" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -606,7 +641,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初版api自动化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初版api自动化" />
+    <MESSAGE value="更新最新版" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新最新版" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -631,13 +667,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java</url>
-          <line>52</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java</url>
-          <line>44</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
@@ -691,13 +727,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java</url>
-          <line>72</line>
+          <line>81</line>
           <properties />
           <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java</url>
-          <line>118</line>
+          <line>127</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -709,43 +745,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>75</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>136</line>
+          <line>171</line>
           <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>188</line>
+          <line>223</line>
           <properties />
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>194</line>
+          <line>229</line>
           <properties />
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java</url>
-          <line>99</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>153</line>
+          <line>188</line>
           <properties />
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>191</line>
+          <line>226</line>
           <properties />
           <option name="timeStamp" value="178" />
         </line-breakpoint>
@@ -757,19 +793,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
-          <line>51</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java</url>
-          <line>90</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java</url>
-          <line>84</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="182" />
         </line-breakpoint>
@@ -793,7 +829,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java</url>
-          <line>79</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="205" />
         </line-breakpoint>
@@ -803,21 +839,116 @@
           <properties />
           <option name="timeStamp" value="209" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/Test.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/Test.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/HttpClientDemo.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/HttpClientDemo.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java</url>
+          <line>76</line>
+          <properties class="com.qa.tests.Server52077Test.testdataJsonTrue" method="post">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
-        <watch expression="JSONObject.parseObject(json).keySet().iterator()" language="JAVA" />
-        <watch expression="JSONObject.parseObject(json).keySet()" language="JAVA" />
-        <watch expression="map" language="JAVA" />
-        <watch expression="map.get(&quot;key&quot;)" language="JAVA" />
-        <watch expression="map.get(&quot;value&quot;)" language="JAVA" />
-        <watch expression="map.entrySet().iterator()" language="JAVA" />
-        <watch expression="loginApi" language="JAVA" />
-        <watch expression="loginParameter" language="JAVA" />
-        <watch expression="method" language="JAVA" />
-        <watch expression="iterator" language="JAVA" />
-        <watch expression="((HashMap)map).entrySet().toArray()[0]" custom="java.util.HashMap" />
+        <watch expression="requestBody.toString()" language="JAVA" />
+        <watch expression="logintoken=JSONObject.parseObject(json).getString(&quot;token&quot;)" language="JAVA" custom="com.alibaba.fastjson.JSONObject" />
       </configuration>
     </watches-manager>
   </component>
@@ -835,47 +966,54 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>JSONObject.parseObject(json).keySet().iterator()</expression-string>
+        <expression-string>logintoken=JSONObject.parseObject(json).getString(&quot;token&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONObject</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject.parseObject(json).getString(&quot;token&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONObject</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>requestBody.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>requestBody.writeTo();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>requestBody.contentType()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject.parseObject(json).fluentPut(&quot;token&quot;, loginToken)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSONObject.parseObject(json).getString(&quot;tok</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
         <expression-string>JSONObject.parseObject(json).keySet()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>JSONObject.parseObject(json).get(&quot;key&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>JSONObject.parseObject(json).get(1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>JSONObject.parseObject(json).get(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>JSONObject.parseObject(json).getString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>JSONObject.parseObject(json).keySet().</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>JSONObject.parseObject(json).keySet().size()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>e.getExcelData()[0][0]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -934,93 +1072,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_202/src.zip!/java/net/HttpURLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="569" column="25" selection-start-line="569" selection-start-column="25" selection-end-line="569" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar!/org/jsoup/helper/StringUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/OkHttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_202/src.zip!/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1026" column="26" selection-start-line="1026" selection-start-column="26" selection-end-line="1026" selection-end-column="26" />
-          <folding>
-            <element signature="e#48487#48488#0" expanded="true" />
-            <element signature="e#48531#48532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_202/src.zip!/java/net/URLEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1400">
-          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="79" column="15" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/RequestBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/FormBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/Parameters/getParameters.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/Parameters/postParameters.java" />
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/testng-results.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/testng.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-outputtest.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1047,23 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="46" column="21" selection-start-line="42" selection-start-column="8" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="method#getUnsafeOkHttpClient#0;class#BodyClient#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,41 +1168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_202/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1179,32 +1182,6 @@
           <folding>
             <element signature="docComment;method#getExcelData#0;class#ExcelData#0" />
             <element signature="docComment;method#getPath#0;class#ExcelData#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#post#0;class#testCase3#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="148" column="44" selection-start-line="148" selection-start-column="44" selection-end-line="148" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Numbers#0;class#testCase2#0" />
-            <element signature="method#Numbers2#0;class#testCase2#0" />
-            <element signature="method#putNumbers#0;class#testCase2#0" />
-            <element signature="method#put#0;class#testCase2#0" />
-            <element signature="n#!!block;n#endTest#0;n#testCase2#0" />
           </folding>
         </state>
       </provider>
@@ -1220,31 +1197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="563" selection-start-line="563" selection-end-line="563" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/AiwenAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/config/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1271,37 +1227,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1284">
-          <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!block;n#endTest#0;n#testCase1#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/excelPath.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/excelPath.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/excelPath.properties" />
     <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_202/src.zip!/java/util/ResourceBundle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1313,22 +1239,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/doctor-assist-toolTest/52007Test/testdataJsonTrue.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/config/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="60" />
+          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="145" column="1" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
           <folding>
-            <element signature="e#1515#2150#1" />
-            <element signature="e#5321#5322#0" expanded="true" />
-            <element signature="e#5361#5362#0" expanded="true" />
+            <element signature="method#setUp#0;class#testdataJsonNull#0" />
+            <element signature="method#post#0;class#testdataJsonNull#0" />
+            <element signature="method#get#0;class#testdataJsonNull#0" />
+            <element signature="method#getConfigDatas#0;class#testdataJsonNull#0" />
+            <element signature="method#Numbers#0;class#testdataJsonNull#0" />
+            <element signature="method#Numbers2#0;class#testdataJsonNull#0" />
+            <element signature="method#putNumbers#0;class#testdataJsonNull#0" />
+            <element signature="method#login#0;class#testdataJsonNull#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2688">
+          <caret line="229" column="22" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="881">
+          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1469">
+          <caret line="106" column="48" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="n#!!block;n#endTest#0;n#testCase1#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="59" column="48" lean-forward="true" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Numbers#0;class#testCase2#0" />
+            <element signature="method#Numbers2#0;class#testCase2#0" />
+            <element signature="method#putNumbers#0;class#testCase2#0" />
+            <element signature="method#put#0;class#testCase2#0" />
+            <element signature="n#!!block;n#endTest#0;n#testCase2#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/CookieJar.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/org/apache/http/impl/client/DefaultHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/org/apache/http/impl/client/AbstractHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="414" column="42" selection-start-line="414" selection-start-column="42" selection-end-line="414" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/OkHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-574">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/initExcelPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="28">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#217#218#0" expanded="true" />
             <element signature="e#250#251#0" expanded="true" />
@@ -1336,39 +1360,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="173">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/HttpClientDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
-            <element signature="method#login#0;class#testdataJsonTrue#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonNull.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/FormBody.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="138" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="138" />
+        <state relative-caret-position="84">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonFalse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="81" column="58" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-sources.jar!/org/apache/commons/httpclient/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-742">
+          <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
           <folding>
-            <element signature="method#setUp#0;class#testdataJsonNull#0" />
-            <element signature="e#1514#2149#1" />
-            <element signature="e#1664#1759#1" />
-            <element signature="e#1800#1907#1" />
-            <element signature="e#1944#2033#1" />
-            <element signature="e#2072#2139#1" />
-            <element signature="method#post#0;class#testdataJsonNull#0" />
-            <element signature="e#2661#2818#1" />
-            <element signature="method#get#0;class#testdataJsonNull#0" />
-            <element signature="e#3319#3476#1" />
-            <element signature="method#getConfigDatas#0;class#testdataJsonNull#0" />
-            <element signature="method#Numbers#0;class#testdataJsonNull#0" />
-            <element signature="method#Numbers2#0;class#testdataJsonNull#0" />
-            <element signature="method#putNumbers#0;class#testdataJsonNull#0" />
-            <element signature="method#login#0;class#testdataJsonNull#0" />
-            <element signature="e#4728#4855#1" />
-            <element signature="e#4861#4989#1" />
+            <element signature="e#4030#4031#0" expanded="true" />
+            <element signature="e#4074#4075#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1-sources.jar!/org/apache/commons/httpclient/HttpMethodBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="384" column="16" selection-start-line="384" selection-start-column="16" selection-end-line="384" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.3.0/okhttp-3.3.0.jar!/okhttp3/RequestBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/test/testCase3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#get#0;class#testCase3#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/initExcelPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/base/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="575" selection-start-line="575" selection-end-line="575" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonTrue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="method#getConfigDatas#0;class#testdataJsonTrue#0" />
+            <element signature="method#Numbers#0;class#testdataJsonTrue#0" />
+            <element signature="method#Numbers2#0;class#testdataJsonTrue#0" />
+            <element signature="method#putNumbers#0;class#testdataJsonTrue#0" />
+            <element signature="e#5590#5591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/Server52077Test/testdataJsonFalse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restclient/BodyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="e#1740#1901#0" />
+            <element signature="e#1924#1999#0" />
+            <element signature="docComment;method#buildUrl#0;class#BodyClient#0" />
+            <element signature="method#buildUrl#0;class#BodyClient#0" />
+            <element signature="method#get#0;class#BodyClient#0" />
+            <element signature="method#getUnsafeOkHttpClient#0;class#BodyClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/restclient/RestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="method#doPut#0;class#RestClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qa/tests/severiceNameTest/testdataJsonTrue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>

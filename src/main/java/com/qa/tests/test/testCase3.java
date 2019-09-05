@@ -41,6 +41,15 @@ public class testCase3 extends TestBase {
 
     }
 
+    public  void load() throws  Exception{
+
+    }
+
+
+
+
+
+
     @DataProvider(name="loadData")
     public Object[][] loadaccount() throws BiffException, IOException{
         ExcelData e=new ExcelData(testCaseExcel, "load");

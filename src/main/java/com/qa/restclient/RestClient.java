@@ -1,12 +1,14 @@
 package com.qa.restclient;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.qa.base.TestBase;
 import org.apache.commons.httpclient.*;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -34,7 +36,10 @@ public String doGet(String url , String json) throws IOException{
     String param= URLEncoder.encode(json,"UTF-8");
    GetMethod get=new GetMethod(uri+param);
     com.qa.base.Logger.info("此时的请求参数：\n"+json+"\n");
+    String logintoken="";
+    logintoken= JSONObject.parseObject(json).getString("token");
     get.setRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36");
+    get.addRequestHeader("token",logintoken);
     get.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET,"UTF-8");
     get.addRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
    String body="";
@@ -74,9 +79,13 @@ public String doGet(String url , String json) throws IOException{
             //创建post方式请求对象
             PostMethod httpPost = new PostMethod(httpUrl);
             //设置头信息
+        String logintoken="";
+        if(json.contains("token")){
+        logintoken=JSONObject.parseObject(json).getString("token");}
         httpPost.setRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36");
         httpPost.addRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-            //装填参数
+        httpPost.addRequestHeader("token", logintoken);
+        //装填参数
         httpPost.setParameter("dataJson",json);
         com.qa.base.Logger.info("此时的请求参数：\n"+json+"\n");
          httpPost.getParams().setParameter(HttpMethodParams.RETRY_HANDLER, new DefaultHttpMethodRetryHandler());
@@ -140,4 +149,17 @@ public String doGet(String url , String json) throws IOException{
         }
         return result;
     }
+
+//    //获取cookies
+//    public void getCookies(String uri)throws  IOException{
+//        HttpPost post=new HttpPost(uri);
+//        DefaultHttpClient client=new DefaultHttpClient();
+//        HttpResponse response=client.execute(post);
+//        //获取cookies信息
+//        this.store=client.getCookieStore();
+//        List<Cookie>cookies=store.getCookies();
+//        for(Cookie cookie:cookies){
+//            System.out.println(cookie.getName()+":"+cookie.getValue());
+//
+//    }
 }
