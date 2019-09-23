@@ -6,7 +6,7 @@
             <class name="com.qa.tests.test.testCase2">
                 <methods>
                     <include name="post"></include>
-                    <include name="get"></include>
+<!--                    <include name="get"></include>-->
                 </methods>
             </class>
         </classes>

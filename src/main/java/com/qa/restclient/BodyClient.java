@@ -59,41 +59,6 @@ public class BodyClient extends TestBase {
         return result;
     }
 
-    //post dataJson提交格式
-    public static String postBydataJson(String url, String json) {
-        String result = null;
-        //建立Okhttp
-        if (mClient == null) {
-            mClient = getUnsafeOkHttpClient();
-        }
-        MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-        //MediaType  设置Content-Type 标头中包含的媒体类型值
-        RequestBody requestBody =RequestBody.create(mediaType,"data\\="+json);
-        com.qa.base.Logger.info("此时的请求参数：\n"+json+"\n");
-        Request request;
-        if(json.contains("token")){  //有的请求头会带token，这里加个判断，如果传参的json要求带token，自动将token所带的属性值赋给属性头
-            String token=JSONObject.parseObject(json).getString("token");
-            request = new Request.Builder().url(url)//请求的url
-                    .post(requestBody)
-                    .addHeader("token", token)
-                    .addHeader("Content-Type", "application/x-www-form-urlencoded")
-                    .build();
-        }else{
-            request = new Request.Builder().url(url)//请求的url
-                    .post(requestBody)
-                    .addHeader("Content-Type", "application/x-www-form-urlencoded")
-                    .build();
-        }
-        try {
-            //执行post请求，返回result字符串
-            Response response = mClient.newCall(request).execute();
-            result = response.body().string();
-        } catch (IOException e) {
-            result = "failed";
-            e.printStackTrace();
-        }
-        return result;
-    }
 
 
     /**

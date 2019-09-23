@@ -47,16 +47,16 @@ public class testdataJsonTrue extends TestBase {
             if (key.equals("apiName")) {
                 loginApi = (String) entry.getValue();  //将config里面的值 赋给loginApi
             }
-            if (key.equals("dataJson")) {
+            else if (key.equals("dataJson")) {
                 loginParameter = (String) entry.getValue();  //将config里面的值 赋给loginParameter
             }
-            if (key.equals("Host")) {
+            else  if (key.equals("Host")) {
                 host = (String) entry.getValue();    //将config里面的值 赋给host
             }
-            if (key.equals("Method")) {
+            else  if (key.equals("Method")) {
                 method = (String) entry.getValue();
             }
-            if(key.equals("token")){
+            else if(key.equals("token")){
                 loginToken=(String) entry.getValue();
             }
         }
@@ -102,6 +102,7 @@ public class testdataJsonTrue extends TestBase {
         json = CreatData.initdata(json, "true");
         //将token拿到，传给全局变量logintoken,再去替换一些需要token传参的value
         String expectval = data.get("expectval");
+        //String closeableHttpResponse = restClient.doGet(host + apiUrl, json);
         String closeableHttpResponse = restClient.doGet(host + apiUrl, json);
         AiwenAssert.contains(closeableHttpResponse, expectval);
 

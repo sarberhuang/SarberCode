@@ -5,8 +5,7 @@ import jxl.read.biff.BiffException;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class CreatData {
 
@@ -31,7 +30,16 @@ public class CreatData {
                         if (map.get("value").equals(null)) { //只给了变量 没给值得时候，为了防止空指针异常，一律传 “”
                             json = String.valueOf(JSONObject.parseObject(json).fluentPut(map.get("key"),""));
                         } else {//如果有值了，是多少就传多少
+                            if(map.get("type").equals("int")){
+                                json = String.valueOf(JSONObject.parseObject(json).fluentPut(map.get("key"),Integer.parseInt(map.get("value"))));
+                            }else if(map.get("type").equals("List<String>")){//字符串类型的素组暂时只赋值为空
+                                List<String> list=new ArrayList<String>();
+                                list.add("");
+//                              json = String.valueOf(JSONObject.parseObject(json).fluentPut(map.get("key"), Arrays.toString())));
+                            }
+                            else{
                             json = String.valueOf(JSONObject.parseObject(json).fluentPut(map.get("key"),map.get("value")));
+                             }
                         }
                     }
                 }

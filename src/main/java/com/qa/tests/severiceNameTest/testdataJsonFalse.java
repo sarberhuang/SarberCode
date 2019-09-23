@@ -50,20 +50,29 @@ public class testdataJsonFalse extends TestBase {
             if (key.equals("apiName")) {
                 loginApi = (String) entry.getValue();  //将config里面的值 赋给loginApi
             }
-            if (key.equals("dataJson")) {
+            else if (key.equals("dataJson")) {
                 loginParameter = (String) entry.getValue();  //将config里面的值 赋给loginParameter
             }
-            if (key.equals("Host")) {
+            else  if (key.equals("Host")) {
                 host = (String) entry.getValue();    //将config里面的值 赋给host
             }
-            if (key.equals("Method")) {
+            else  if (key.equals("Method")) {
                 method = (String) entry.getValue();
             }
+            else if(key.equals("token")){
+                loginToken=(String) entry.getValue();
+            }
         }
-        //拿到登陆里面token数据的位置，生成全局变量token
-        tokenPath = prop.getProperty("token");
-        System.out.println("只运行一次登陆，并获取登陆token");
-        login();
+        if(loginToken==null ||loginToken.equals("")){
+            System.out.println("使用登陆参数方法进行获取token");
+            //拿到登陆里面token数据的位置，生成全局变量token
+            tokenPath = prop.getProperty("token");
+            System.out.println("只运行一次登陆，并获取登陆token");
+            login();
+        }else{
+            loginToken=loginToken;
+            System.out.println("直接读取表里的token值设为logintoken的参数值");
+        }
     }
 
     @Test(dataProvider = "postData")

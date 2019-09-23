@@ -23,7 +23,6 @@ public class Test {
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
-  @org.testng.annotations.Test
   public void test() throws Exception {
     driver.get("https://www.wenwo.com/main/home");
     driver.findElement(By.id("loginTel")).click();
@@ -72,14 +71,7 @@ public class Test {
     }
   }
 
-  private boolean isElementPresent(By by) {
-    try {
-      driver.findElement(by);
-      return true;
-    } catch (NoSuchElementException e) {
-      return false;
-    }
-  }
+
 
   private boolean isAlertPresent() {
     try {
