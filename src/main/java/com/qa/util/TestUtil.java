@@ -3,10 +3,11 @@ package com.qa.util;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.jayway.jsonpath.JsonPath;
+import com.jayway.jsonpath.PathNotFoundException;
 import com.jayway.jsonpath.ReadContext;
 
 
-import org.apache.http.client.methods.CloseableHttpResponse;
+import org.testng.Assert;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -54,9 +55,16 @@ public class TestUtil {
 //获取登陆token
 public static  String getToken(String resp,String jsonPath) throws  Exception{
     ReadContext ctx = JsonPath.parse(resp);
-    String Token = ctx.read(jsonPath);
-      if(null == Token||"".equals(Token))
-      {            new Exception("token不存在");        }
+    String Token="";
+    try{
+     Token = ctx.read(jsonPath);
+        if(null == Token||"".equals(Token))
+        {            new Exception("token不存在");        }
+    }catch (PathNotFoundException e){
+        e.printStackTrace();
+        Assert.fail("配置文件config里面配置的Token路径不对，请根据当前登陆接口返回的response正确配置好路径结构,\n\t\t或者在相关excel表格里配置好token");
+    }
+
       return Token;
 
 }
