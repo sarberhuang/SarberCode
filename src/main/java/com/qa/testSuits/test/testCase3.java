@@ -1,11 +1,10 @@
-package com.qa.tests.test;
+package com.qa.testSuits.test;
 
 
-import com.alibaba.fastjson.JSONObject;
 import com.qa.base.AiwenAssert;
 import com.qa.base.Logger;
 import com.qa.base.TestBase;
-import com.qa.restclient.BodyClient;
+import com.qa.restclient.RestClient;
 import com.qa.util.ExcelData;
 import com.qa.util.TestUtil;
 import jxl.read.biff.BiffException;
@@ -20,8 +19,7 @@ import java.util.Map;
 
 
 public class testCase3 extends TestBase {
-    TestBase testBase;
-    BodyClient restClient;
+    RestClient restClient;
     CloseableHttpResponse closeableHttpResponse;
     //host根url
     String host;
@@ -31,8 +29,7 @@ public class testCase3 extends TestBase {
     HashMap<String ,String> postHeader = new HashMap<String, String>();
     @BeforeClass
     public void setUp(){
-        testBase = new TestBase();
-        restClient = new BodyClient();
+        restClient = new RestClient();
         postHeader.put("Content-Type","application/json");
         //载入配置文件，接口endpoint
         host = prop.getProperty("Host");
@@ -79,7 +76,7 @@ public class testCase3 extends TestBase {
 
         //将登录请求对象序列化成json对象
         //发送登录请求
-      String  closeableHttpResponse = BodyClient.postByJson(host+apiUrl,json);
+      String  closeableHttpResponse = restClient.postByJson(host+apiUrl,json);
         //从返回结果中获取状态码
         //data.put("actual",closeableHttpResponse);
         AiwenAssert.contains(TestUtil.replaceBlank(closeableHttpResponse),TestUtil.replaceBlank(expectval));
@@ -97,6 +94,7 @@ public class testCase3 extends TestBase {
         // cid: 123
         //pnum: 123123
         //records: 123
+        json.replace("，",",");//将中文逗号全部替换成英文逗号，防止在录入数据的时候，录入中文逗号而不区分
         String[] paramter = json.split("\\n");
       for(int i=0;i<paramter.length;i++){  //将输入的参数传入到query数组里
           String key,value="";
@@ -106,7 +104,7 @@ public class testCase3 extends TestBase {
           query.put(key,value);
       }
         //发送登录请求
-        String  closeableHttpResponse = BodyClient.get(host+apiUrl,query);
+        String  closeableHttpResponse = restClient.getByJson(host+apiUrl,query);
         //从返回结果中获取状态码
         //data.put("actual",closeableHttpResponse);
         AiwenAssert.contains(closeableHttpResponse,expectval);

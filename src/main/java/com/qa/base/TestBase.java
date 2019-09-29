@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import java.io.*;
 import java.util.Properties;
-
+//目前所用的框架 或者说处理方法都没有运用到  update 2019/9/29 hsb
 public class TestBase {
     //这个类作为所有接口请求的父类，加载读取properties文件
     public Properties prop;

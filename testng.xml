@@ -3,10 +3,10 @@
 <suite name="test" verbose="1" preserve-order="true" parallel="false">
     <test name="项目1">
         <classes>
-            <class name="com.qa.tests.test.testCase2">
+            <class name="com.qa.testSuits.datajson.testdataJsonTrue">
                 <methods>
-                    <include name="post"></include>
-<!--                    <include name="get"></include>-->
+                    <!--                   <include name="post"></include>-->
+                                     <include name="get"></include>
                 </methods>
             </class>
         </classes>
